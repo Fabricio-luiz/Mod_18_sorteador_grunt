@@ -1,0 +1,63 @@
+@fontePrincipal: Roboto, sans-serif; //qlqr outra fonte sem serifa
+@fonteDoTitulo: Lobster, cursive; //qlqr outra fonte cursiva
+@corDoTexto: #fff;
+@corDeFundo: #eb3b5a;;
+@corDoTextoBotao: #000;
+@corDoFundoDoBotao: #f7b731;
+
+body{
+    background-color: @corDeFundo;
+    font-family: @fontePrincipal;
+    color: @corDoTexto;
+}
+
+h1{
+    font-family: @fonteDoTitulo;
+    font-size: 3em;
+}
+
+main{
+    max-width: 960px; //largura limitada em 960px
+    width: 100%; //ocupar 100% qnd estiver em 960px
+    margin: 0 auto; //para centralizar na horizontal
+    font-size: 2em;
+    text-align: center; //texto centralizado
+}
+
+button{
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
+    border-radius: 8px; //arredondar borda do botão
+    background-color: @corDoFundoDoBotao;
+    color: @corDoTextoBotao;
+    font-family: @fontePrincipal;
+}
+
+input{
+    display: block; //para que ele fique abaixo do label
+    margin: 16px auto 0; //mrgem entre o input e o label topo/lateral/abaixo
+    font-size: 2em;
+    max-width: 120px; //limitar a largura do campo em 120px
+    border: none; //remove a borda
+    background-color: transparent; //remove o fundo
+    text-align: center; //centraliza o texto
+    color: @corDoTexto;
+    border-bottom: 5px solid #fff; //borda abaixo para não ficar vazio
+}
+
+.resultado{
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted #fff; //dotted = pontilhado
+    display: none;
+
+    span{
+        font-weight: bold;
+        font-size: 3em;
+        display: block; //quebrar a linha
+    }
+
+}
